@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicacion_accesodatos.TareasHechas">
+   <children>
+      <Label layoutX="244.0" layoutY="35.0" text="TAREAS REALIZADAS" />
+      <TableView fx:id="tablaTareasHechas" layoutY="100.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="columnaID" prefWidth="75.0" text="ID Tarea" />
+          <TableColumn fx:id="columnaDescripcion" prefWidth="238.0" text="Descripcion" />
+            <TableColumn fx:id="columnaFecha" prefWidth="147.0" text="Fecha Vencimineto" />
+            <TableColumn fx:id="columnaCategoria" prefWidth="139.0" text="Categoria ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnMostrar" layoutX="265.0" layoutY="62.0" mnemonicParsing="false" onAction="#mostrarTareasHechas" text="MOSTRAR" />
+      <Button fx:id="btnVolver" layoutX="243.0" layoutY="317.0" mnemonicParsing="false" onAction="#volverInicio" text="VOLVER AL INICIO" />
+   </children>
+</AnchorPane>

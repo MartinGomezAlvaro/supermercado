@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="373.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicacion_accesodatos.Inicio">
+   <children>
+      <AnchorPane fx:id="anchorInicio" layoutX="7.0" layoutY="4.0" prefHeight="364.0" prefWidth="433.0" styleClass="anchorBtnInicio" stylesheets="@../../../css/estilos.css">
+         <children>
+            <Label layoutX="199.0" layoutY="39.0" text="INICIO" />
+            <AnchorPane fx:id="anchorBtnAnadir" layoutX="14.0" layoutY="74.0" prefHeight="130.0" prefWidth="200.0" styleClass="anchorBtnAnadir" stylesheets="@../../../css/estilos.css">
+               <children>
+                  <Button fx:id="btnAñadir" layoutX="51.0" layoutY="60.0" mnemonicParsing="false" onAction="#añadirTarea" text="AÑADIR TAREA" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorBtnEditar" layoutX="14.0" layoutY="206.0" prefHeight="144.0" prefWidth="206.0" styleClass="anchorBtnEditar" stylesheets="@../../../css/estilos.css">
+               <children>
+                  <Button fx:id="btnEditar" layoutX="53.0" layoutY="60.0" mnemonicParsing="false" onAction="#editarTarea" text="EDITAR TAREA" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorBtnEliminar" layoutX="217.0" layoutY="74.0" prefHeight="144.0" prefWidth="200.0" styleClass="anchorBtnEliminar" stylesheets="@../../../css/estilos.css">
+               <children>
+                  <Button fx:id="btnEliminar" layoutX="46.0" layoutY="60.0" mnemonicParsing="false" onAction="#eliminarTarea" text="ELIMINAR TAREA" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorBtnMostrar" layoutX="217.0" layoutY="206.0" prefHeight="144.0" prefWidth="200.0" styleClass="anchorBtnMostrar" stylesheets="@../../../css/estilos.css">
+               <children>
+                  <Button fx:id="btnMostrar" layoutX="42.0" layoutY="60.0" mnemonicParsing="false" onAction="#mostrarTarea" text="MOSTRAR TAREAS" />
+                  <AnchorPane fx:id="anchorBtnRealizadas" layoutX="-66.0" layoutY="-26.0" prefHeight="81.0" prefWidth="133.0" styleClass="anchorBtnRealizadas" stylesheets="@../../../css/estilos.css">
+                     <children>
+                        <Button fx:id="btnRealizadas" layoutX="14.0" layoutY="28.0" mnemonicParsing="false" onAction="#tareasRealizadas" text="TAREAS HECHAS" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

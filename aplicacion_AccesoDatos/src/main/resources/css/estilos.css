@@ -1,0 +1,21 @@
+.anchorBtnAnadir{
+-fx-background-color:blue;
+}
+.anchorBtnMostrar{
+    -fx-background-color:orange;
+}
+
+.anchorBtnEliminar{
+    -fx-background-color:red;
+}
+
+.anchorBtnEditar{
+    -fx-background-color:green;
+}
+.anchorBtnRealizadas{
+    -fx-background-color:purple;
+}
+.anchorBtnInicio{
+    -fx-background-color:black;
+}
+

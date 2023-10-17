@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicacion_accesodatos.EditarTarea">
+   <children>
+      <Label layoutX="279.0" layoutY="32.0" text="EDITAR TAREA" />
+      <Label layoutX="58.0" layoutY="69.0" text="Seleccione el ID de la tarea que quiere modificar" />
+      <TextField fx:id="txtID" layoutX="348.0" layoutY="65.0" />
+      <Label layoutX="58.0" layoutY="113.0" text="Nueva descripción " />
+      <TextArea fx:id="txtDescripcion" layoutX="21.0" layoutY="137.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="307.0" layoutY="113.0" text="Nueva fecha de vencimiento" />
+      <TextField fx:id="txtFecha" layoutX="308.0" layoutY="137.0" />
+      <Label layoutX="339.0" layoutY="259.0" text="Nueva categoría" />
+      <Label layoutX="346.0" layoutY="183.0" text="Nuevo estado" />
+      <TextField fx:id="txtCategoria" layoutX="308.0" layoutY="295.0" />
+      <TextField fx:id="txtEstado" layoutX="308.0" layoutY="209.0" />
+      <Button fx:id="btnActualizar" layoutX="254.0" layoutY="348.0" mnemonicParsing="false" onAction="#actualizarTarea" text="ACTUALIZAR" />
+      <Button fx:id="btnVolver" layoutX="420.0" layoutY="348.0" mnemonicParsing="false" onAction="#volverInicio" text="VOLVER AL INICIO" />
+   </children>
+</AnchorPane>
