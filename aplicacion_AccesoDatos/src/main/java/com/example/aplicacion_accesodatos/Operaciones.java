@@ -55,7 +55,7 @@ public class Operaciones {
         conexion.close();
     }
 
-    public void guardarDatos(Tareas tareas) throws SQLException {
+    public void guardarDatos(Tareas tareas) throws SQLException  {
         String sql = "INSERT INTO tareas (Id,Descripcion, FechaVencimiento, Estado, CategoriaID) VALUES (?, ?, ?, ?,?)";
 
         PreparedStatement sentencia = conexion.prepareStatement(sql);
